@@ -16,14 +16,16 @@ In this project, I will demonstrate the process of initiating a server within ou
 
 Firstly, let's initiate by accessing our Kali Linux machine to determine its IP address. Once identified, we'll utilize this IP address as the servicing host for our key logger creation. This strategy enables us to capture keystrokes inputted on the fake website effectively.
 
-
+<p align="center">
+<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
 
 After getting the Kali IP address we will then run the command:
 
     Sudo systemctl start postgresql
 
 This command initiates the Postgres server, a highly versatile relational database renowned for its compatibility with a range of operating systems including Windows, Linux, and MacOS. Postgres serves as a robust solution for storing, managing, and retrieving extensive datasets with remarkable efficiency. Its necessity lies in our objective to securely store the key inputs obtained from the victim.
-
+<p align="center">
+<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
@@ -34,7 +36,8 @@ Following this stage, we'll embark on crafting our key logging attack. Our initi
 The program may take some time to fully load, but once it's up and running, our terminal will undergo a transformation, displaying a keystroke that reads "msf6." This indicates that MSFconsole has initialized successfully. Following the startup, we employ the search command within MSFconsole to look up "keylogger" as demonstrated earlier. While we received three matches, for this demonstration, we'll opt for the first one, represented by the "0" option.
 
 
-
+<p align="center">
+<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
@@ -44,22 +47,28 @@ To select option "0," we simply enter "use 0" into the MSFconsole, triggering it
 
 Note: As we commence the attack, an URL is generated. This URL serves as the residence of our keylogger. Subsequently, we have the capability to fabricate a counterfeit website and embed this URL. Consequently, any text inputted on the counterfeit website will be replicated and accessible to us.
 
-
+<p align="center">
+<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
 
 
 In the image below, we encounter a demonstration keylogger embedded within a website form. For demonstration purposes, it's crucial to append "/demo" to the URL obtained from the preceding image. Therefore, the complete URL becomes "http://10.1.158.100:1717/hYYigc/demo". Within the counterfeit website depicted above, there exists a straightforward username and password field.
 
 Note: Here's the view the victim will encounter. It's important to note that this is the stage where you have the ability to craft a convincing replica website of any organization and seamlessly integrate a keylogger into it, constituting a form of phishing.
 
-
+<p align="center">
+<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
 As depicted below, when the victim enters their username and password, everything appears ordinary from their perspective. However, unbeknownst to them, every keystroke they make is being copied and stored on our Kali Linux system.
 
 
-
+<p align="center">
+<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
 In the end, our Kali Linux system quietly records every keystroke made by the user. Each input is captured and stored, providing a detailed log of their actions. This allows us to analyze and potentially utilize the gathered information. Thus, our Kali Linux becomes a crucial tool for monitoring and capturing sensitive information’s.
+
+<p align="center">
+<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
