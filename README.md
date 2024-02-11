@@ -1,4 +1,4 @@
-<h1> Keylogging</h1>
+<h1> Keystroke Logging (Keylogging)</h1>
 
 <h2>Description</h2>
 In this project, I will demonstrate the process of initiating a server within our Kali Linux environment, launching msfconsole, and conducting a search for a keylogging attack. Following this, I will illustrate how to customize the attack to suit our specific requirements before executing it. Additionally, I will provide insight into the victim's perspective, elucidating how the keystrokes from the victim are captured and stored within our Kali Linux terminal
