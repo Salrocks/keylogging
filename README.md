@@ -14,10 +14,15 @@ In this project, I will demonstrate the process of initiating a server within ou
 
 <h2>Program walk-through</h2>
 
-Firstly, let's initiate by accessing our Kali Linux machine to determine its IP address. Once identified, we'll utilize this IP address as the servicing host for our key logger creation. This strategy enables us to capture keystrokes inputted on the fake website effectively.
+Firstly, let's initiate by accessing our Kali Linux machine to determine its IP address. Once identified, we'll utilize this IP address as the servicing host for our key logger creation. This strategy enables us to capture keystrokes inputted on the fake website effectively. To get the IP address we run the command:
+
+      hostname -i
+Another way to find the IP address is simply using the command:
+
+    ifconfig
 
 <p align="center">
-<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
+<img src="https://github.com/Salrocks/keylogging/blob/main/Picture1.png" height="80%" width="80%" alt="OU modification"/>
 
 After getting the Kali IP address we will then run the command:
 
@@ -25,7 +30,7 @@ After getting the Kali IP address we will then run the command:
 
 This command initiates the Postgres server, a highly versatile relational database renowned for its compatibility with a range of operating systems including Windows, Linux, and MacOS. Postgres serves as a robust solution for storing, managing, and retrieving extensive datasets with remarkable efficiency. Its necessity lies in our objective to securely store the key inputs obtained from the victim.
 <p align="center">
-<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
+<img src="https://github.com/Salrocks/keylogging/blob/main/2.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
@@ -37,7 +42,7 @@ The program may take some time to fully load, but once it's up and running, our 
 
 
 <p align="center">
-<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
+<img src="https://github.com/Salrocks/keylogging/blob/main/3.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
@@ -48,7 +53,7 @@ To select option "0," we simply enter "use 0" into the MSFconsole, triggering it
 Note: As we commence the attack, an URL is generated. This URL serves as the residence of our keylogger. Subsequently, we have the capability to fabricate a counterfeit website and embed this URL. Consequently, any text inputted on the counterfeit website will be replicated and accessible to us.
 
 <p align="center">
-<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
+<img src="https://github.com/Salrocks/keylogging/blob/main/4.png" height="80%" width="80%" alt="OU modification"/>
 
 
 In the image below, we encounter a demonstration keylogger embedded within a website form. For demonstration purposes, it's crucial to append "/demo" to the URL obtained from the preceding image. Therefore, the complete URL becomes "http://10.1.158.100:1717/hYYigc/demo". Within the counterfeit website depicted above, there exists a straightforward username and password field.
@@ -56,7 +61,7 @@ In the image below, we encounter a demonstration keylogger embedded within a web
 Note: Here's the view the victim will encounter. It's important to note that this is the stage where you have the ability to craft a convincing replica website of any organization and seamlessly integrate a keylogger into it, constituting a form of phishing.
 
 <p align="center">
-<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
+<img src="https://github.com/Salrocks/keylogging/blob/main/5.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
@@ -64,11 +69,11 @@ As depicted below, when the victim enters their username and password, everythin
 
 
 <p align="center">
-<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
+<img src="https://github.com/Salrocks/keylogging/blob/main/6.png" height="80%" width="80%" alt="OU modification"/>
 
 
 
 In the end, our Kali Linux system quietly records every keystroke made by the user. Each input is captured and stored, providing a detailed log of their actions. This allows us to analyze and potentially utilize the gathered information. Thus, our Kali Linux becomes a crucial tool for monitoring and capturing sensitive information’s.
 
 <p align="center">
-<img src="https://files.catbox.moe/cg25cg.png" height="80%" width="80%" alt="OU modification"/>
+<img src="https://github.com/Salrocks/keylogging/blob/main/7.png" height="80%" width="80%" alt="OU modification"/>
